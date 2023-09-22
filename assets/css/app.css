@@ -77,12 +77,45 @@
 
 
   h1, h2, h3, h4, h5, h6{
+    color: #262626;
     font-family: Oswald;
   }
 
 
-p, a{
+p {
+    color: #262626;
     font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 188.889% */
+}
+
+.fancy-heading-alt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.post-content blockquote{
+    color: #262626;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 34px;
+}
+.bd-featured-container{
+    max-width: 755px;
+    height: 482px;
+}
+.bd-single-featured-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
