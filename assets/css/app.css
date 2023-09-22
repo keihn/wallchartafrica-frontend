@@ -81,6 +81,11 @@
     font-family: Oswald;
   }
 
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
 
 p {
     color: #262626;
@@ -100,6 +105,19 @@ p {
     flex-shrink: 0;
 }
 
+.bd-social-icon{
+    padding: 7px 10px;
+    border-radius: 50px;
+    background: #279761;
+    text-decoration: none;
+}
+
+.bd-social-icon svg{
+    fill: #FDCB00;
+    width: 14.383px;
+    height: 11.687px;
+}
+
 .post-content blockquote{
     color: #262626;
     font-family: Inter;
@@ -113,9 +131,81 @@ p {
     height: 482px;
 }
 .bd-single-featured-image{
+    display: block;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.sm-post-component{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.sm-post-component .content{
+    width: 175px;
+    line-height: 20px;
+}
+
+.sm-post-component .content .metadata{
+    display: inline-flex
+}
+.sm-post-component .content .metadata a{
+    color: #279761;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+} 
+
+.featured-image .featured-small{
+    display: inline-block;
+    width: 129.6px;
+    height: 87px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sm-post-component .content .headline{
+    text-decoration: none;
+}
+
+.sm-post-component .content .headline h3{
+    color:#262626;
+    flex-shrink: 0;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+}
+.sm-post-component .content .headline h3:hover{
+    color: #F60A0A;
+    cursor: pointer;
+}
+
+.meta-divider{
+    color: #262626;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px 5px;
+}
+
+.post-nav{
+    color: #262626;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
 }
 
 
