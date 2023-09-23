@@ -1,90 +1,128 @@
 /* oswald-200 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 200;
-    src: url('../fonts/Oswald-ExtraLight.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-300 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-ExtraLight.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/Oswald-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-Bold.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Oswald-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/Oswald-Medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-Medium.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/Oswald-SemiBold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-SemiBold.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/Oswald-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
+    src: url('../fonts/Oswald-Bold.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 
-  /* inter-regular - latin */
+/* inter-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-         url('../fonts/inter-v13-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* inter-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../fonts/inter-v13-latin-regular.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-         url('../fonts/inter-v13-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* inter-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../fonts/inter-v13-latin-500.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-         url('../fonts/inter-v13-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
+    src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../fonts/inter-v13-latin-700.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 
+body {
+    background-color: F8F8F8;
+}
 
-  h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #262626;
     font-family: Oswald;
-  }
+}
 
-a{
+a {
     text-decoration: none !important;
     cursor: pointer;
 }
+
+
 
 
 p {
@@ -93,32 +131,56 @@ p {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px; /* 188.889% */
+    line-height: 34px;
+    /* 188.889% */
 }
 
-.fancy-heading-alt{
+small {
+    color: #262626;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.author-avatar{
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    border: 1px solid #262626;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.author-name{
+    color: #262626;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.article-meta{
+    color: #262626;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.fancy-heading-alt {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: row;
     gap: 10px;
     flex-shrink: 0;
 }
 
-.bd-social-icon{
-    padding: 7px 10px;
-    border-radius: 50px;
-    background: #279761;
-    text-decoration: none;
-}
-
-.bd-social-icon svg{
-    fill: #FDCB00;
-    width: 14.383px;
-    height: 11.687px;
-}
-
-.post-content blockquote{
+.post-content blockquote {
     color: #262626;
     font-family: Inter;
     font-size: 18px;
@@ -126,32 +188,75 @@ p {
     font-weight: 700;
     line-height: 34px;
 }
-.bd-featured-container{
-    max-width: 755px;
+
+.single-featured-container {
+    max-width: 100%;
     height: 482px;
 }
-.bd-single-featured-image{
+
+.single-featured-container .featured-image {
     display: block;
+    min-width: 100%;
+    height: 482px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: cover;
 }
 
-.sm-post-component{
+
+.sm-post-component {
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 10px;
 }
 
-.sm-post-component .content{
+.md-post-component {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sm-post-component .content {
     width: 175px;
     line-height: 20px;
 }
 
-.sm-post-component .content .metadata{
+.md-post-component .content {
+    align-self: stretch;
+    color: #262626;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 20px;
+}
+.post-mid-col.content {
+    align-self: stretch;
+    color: #262626;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 20px;
+}
+
+.sm-post-component .content .metadata {
     display: inline-flex
 }
-.sm-post-component .content .metadata a{
+
+.md-post-component .content .metadata {
+    display: inline-flex
+}
+.post-mid-col .content .metadata {
+    display: inline-flex;
+    font-family: Oswald;
+    font-weight: 700;
+}
+
+.sm-post-component .content .metadata a {
     color: #279761;
     font-family: Oswald;
     font-size: 12px;
@@ -159,21 +264,60 @@ p {
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
-} 
+}
 
-.featured-image .featured-small{
+.md-post-component .content .metadata a {
+    color: #279761;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.post-mid-col .content .metadata a {
+    color: #279761;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.sm-post-component .featured-image .featured-small {
     display: inline-block;
     width: 129.6px;
     height: 87px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.sm-post-component .content .headline{
+
+.md-post-component .featured-image .featured-mid {
+    display: inline-block;
+    width: 175px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.featured-mid-col{
+    display: flex;
+    height: 169px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.sm-post-component .content .headline {
     text-decoration: none;
 }
 
-.sm-post-component .content .headline h3{
-    color:#262626;
+.sm-post-component .content, .headline h3 {
+    color: #262626;
     flex-shrink: 0;
     font-family: Oswald;
     font-size: 14px;
@@ -183,12 +327,57 @@ p {
     text-decoration: none;
     transition: ease-in 0.2s;
 }
-.sm-post-component .content .headline h3:hover{
+
+.md-post-component .content .headline h3 {
+    color: #262626;
+    flex-shrink: 0;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+.post-mid-col .content .headline h3{
+    align-self: stretch;
+    color: #262626;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.md-post-component .content .headline h3 {
+    color: #262626;
+    flex-shrink: 0;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+.sm-post-component .content .headline h3:hover {
     color: #F60A0A;
     cursor: pointer;
 }
 
-.meta-divider{
+.md-post-component .content .headline h3:hover {
+    color: #F60A0A;
+    cursor: pointer;
+}
+
+.post-mid-col .headline h3:hover{
+    color:#F60A0A;
+    cursor: pointer;
+}
+.meta-divider {
     color: #262626;
     font-family: Inter;
     font-size: 16px;
@@ -198,7 +387,7 @@ p {
     margin: 0px 5px;
 }
 
-.post-nav{
+.post-nav {
     color: #262626;
     font-family: Oswald;
     font-size: 16px;
@@ -209,20 +398,80 @@ p {
 }
 
 
+.comment-component .comment-content .comment-name {
+    color: #F60A0A;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 116.667% */
+    letter-spacing: 0.2px;
+}
+
+.comment-component .comment-content .comment-time {
+    color: #262626;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 233.333% */
+    letter-spacing: 0.2px;
+}
+
+.comment-component .comment-content .comment-text {
+    color: #262626;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    letter-spacing: 0.2px;
+}
+
+.comment-component .user-avatar i {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 87.5% */
+    padding: 10px 18px;
+    letter-spacing: 0.2px;
+    background-color: #F60A0A;
+    border-radius: 50%;
+}
+
+.comment-btn {
+    color: #737373;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 20px;
+    border-radius: 50px !important;
+    border: 1px solid #9B9999 !important;
+    background: #FFF !important;
+}
+
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {}
 
- /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { }
+@media (min-width: 1400px) {}
