@@ -117,6 +117,13 @@ h6 {
     font-family: Oswald;
 }
 
+h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 a {
     text-decoration: none !important;
     cursor: pointer;
@@ -144,7 +151,10 @@ small {
     line-height: normal;
 }
 
-.author-avatar{
+.category-tag {
+    color: #279761;
+}
+.author-avatar {
     width: 38px;
     height: 38px;
     border-radius: 38px;
@@ -153,7 +163,7 @@ small {
     object-fit: cover;
 }
 
-.author-name{
+.author-name {
     color: #262626;
     font-family: Oswald;
     font-size: 16px;
@@ -162,7 +172,7 @@ small {
     line-height: normal;
 }
 
-.article-meta{
+.article-meta {
     color: #262626;
     font-family: Oswald;
     font-size: 16px;
@@ -232,6 +242,7 @@ small {
     line-height: normal;
     line-height: 20px;
 }
+
 .post-mid-col.content {
     align-self: stretch;
     color: #262626;
@@ -250,6 +261,7 @@ small {
 .md-post-component .content .metadata {
     display: inline-flex
 }
+
 .post-mid-col .content .metadata {
     display: inline-flex;
     font-family: Oswald;
@@ -300,7 +312,7 @@ small {
     background-repeat: no-repeat;
 }
 
-.featured-mid-col{
+.featured-mid-col {
     display: flex;
     height: 169px;
     flex-direction: column;
@@ -316,7 +328,8 @@ small {
     text-decoration: none;
 }
 
-.sm-post-component .content, .headline h3 {
+.sm-post-component .content,
+.headline h3 {
     color: #262626;
     flex-shrink: 0;
     font-family: Oswald;
@@ -340,7 +353,7 @@ small {
     transition: ease-in 0.2s;
 }
 
-.post-mid-col .content .headline h3{
+.post-mid-col .content .headline h3 {
     align-self: stretch;
     color: #262626;
     font-family: Oswald;
@@ -373,10 +386,11 @@ small {
     cursor: pointer;
 }
 
-.post-mid-col .headline h3:hover{
-    color:#F60A0A;
+.post-mid-col .headline h3:hover {
+    color: #F60A0A;
     cursor: pointer;
 }
+
 .meta-divider {
     color: #262626;
     font-family: Inter;
@@ -397,15 +411,13 @@ small {
     letter-spacing: 1px;
 }
 
-
 .comment-component .comment-content .comment-name {
     color: #F60A0A;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 28px;
-    /* 116.667% */
     letter-spacing: 0.2px;
 }
 
@@ -416,18 +428,17 @@ small {
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    /* 233.333% */
     letter-spacing: 0.2px;
 }
 
 .comment-component .comment-content .comment-text {
     color: #262626;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 400;
     line-height: 28px;
-    /* 175% */
+    margin-top: 10px;
     letter-spacing: 0.2px;
 }
 
@@ -438,7 +449,6 @@ small {
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    /* 87.5% */
     padding: 10px 18px;
     letter-spacing: 0.2px;
     background-color: #F60A0A;
@@ -458,20 +468,119 @@ small {
     background: #FFF !important;
 }
 
+
+
+
+/* BOOTSTRAP FORMS OVERRIDE */
+
+.form-control {
+    display:block;
+    width:100%;
+    padding:.69rem .75rem;
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:var(--bs-body-color);
+}
+
+.btn{
+    background-color: #279761;
+    border-color: #279761;
+    border-radius: 3px;
+}
+
+.btn:hover{
+    background-color: #166841;
+    border-color: #279761;
+    border-radius: 3px;
+}
+
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+/* Small devices */
+@media (max-width: 365px) {
+    h1 {
+        width: 100%;
+        font-family: Oswald;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27px;
+    }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+    .author-name{
+        font-family: Oswald;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+    .single-featured-container {
+        max-width: 100%;
+        height: 248px;
+    }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+    .trending-sidebar{
+        display: none;
+    }
+
+    .fancy-heading-alt{
+        margin-top: 30px;
+    }
+    
+    .single-featured-container .featured-image {
+        display: block;
+        min-width: 100%;
+        height: 248px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+    }
+    
+
+    .md-post-component {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .md-post-component .featured-image .featured-mid {
+        display: inline-block;
+        width: 100%;
+        height: 120px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .social-icons-wrapper{
+        margin-top: 20px
+    }
+
+    .post-nav-wrapper .sm-post-component{
+        display: none;
+    }
+
+    .user-avatar{
+        margin-bottom: 20px;
+    }
+
+}
+/* @media (min-width: 576px) {
+
+} */
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {}
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {}
+
+    /* X-Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}
+
+    /* XX-Large devices (larger desktops, 1400px and up) */
+    @media (min-width: 1400px) {}
