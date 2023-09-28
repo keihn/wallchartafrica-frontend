@@ -333,7 +333,6 @@ footer {
     background-repeat: no-repeat;
 }
 
-
 .sm-post-component .content .headline {
     text-decoration: none;
 }
@@ -372,7 +371,6 @@ footer {
     font-weight: 700;
     line-height: normal;
 }
-
 
 .md-post-component .content .headline h3 {
     color: #262626;
@@ -478,6 +476,96 @@ footer {
     background: #FFF !important;
 }
 
+/* CONTACT PAGE STYLES */
+.contact-heading{
+    color: #F60A0A;
+    font-family: Oswald;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.footer-posts {
+    row-gap: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 30px
+}
+
+.website-copyright {
+    color: #262626;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#contact-hero{
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/assets/images/contact-bg.jpg');
+    /* background: rgba(3, 3, 3, 0.065);
+    background-blend-mode: normal; */
+}
+
+#contact-hero h1{
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+#contact-info{
+    background-color: #000000;
+    padding: 15px;
+}
+
+.contact-page a{
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+.contact-page a:hover{
+    color: #F60A0A;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.contact-page .social-icons{
+    display: inline-flex;
+    align-items: center;
+    line-height: 25px;
+}
+
+.contact-page .social-icons svg {
+    margin-left: 10px;
+    width: 20px;
+}
+.contact-page .social-icons svg path{
+    fill: #ffffff;
+}
+
+.contact-page .social-icons svg path:hover{
+    fill: #F60A0A;
+}
+
+/* CONTACT PAGE STYLES END*/
+
+/* FOOTER STYLES */
 
 .footer-title {
     color: #F60A0A;
@@ -511,6 +599,7 @@ footer {
     cursor: pointer;
 }
 
+/* FOOTER STYLES END*/
 
 
 /* BOOTSTRAP FORMS OVERRIDE */
@@ -522,6 +611,8 @@ footer {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    color: #868484;
+    font-family: Inter;
 }
 
 .btn {
@@ -544,24 +635,7 @@ footer {
     font-weight: 500;
     line-height: normal;
 }
-
-.footer-posts {
-    row-gap: 50px;
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-    gap: 30px
-}
-
-.website-copyright {
-    color: #262626;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
+/* BOOTSTRAP FORMS OVERRIDE END*/
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 
