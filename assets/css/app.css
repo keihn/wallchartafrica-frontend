@@ -635,6 +635,21 @@ footer {
     font-weight: 500;
     line-height: normal;
 }
+
+.contact-page button {
+    /* line-height: 0px; */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 200% */
+    letter-spacing: 0.8px;
+}
+.contact-page button svg{
+    /* line-height: 0px; */
+    margin-top: -5px;
+    margin-left: 5px;
+}
 /* BOOTSTRAP FORMS OVERRIDE END*/
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
