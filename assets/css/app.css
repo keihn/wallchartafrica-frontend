@@ -201,6 +201,18 @@ footer {
     flex-shrink: 0;
 }
 
+.btn-bg-none{
+    color: #279761;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 200% */
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
 .post-content blockquote {
     color: #262626;
     font-family: Inter;
