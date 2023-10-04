@@ -20,3 +20,10 @@
         console.log(walk);
     });
 })()
+
+function copyToClip(){
+    const text = document.getElementById('privacy-text').innerText;
+    navigator.clipboard.writeText(text)
+    alert('Copied to clipboard');
+}
+
