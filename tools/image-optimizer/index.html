@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Wallchart Africa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+    <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+
+<body>
+
+
+    <section class="io-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Wallchart image optimizer</h1>
+                    <p>
+                        Iste odit labore dolores ab inventore consequatur. Dolore tempora hic iste velit. Ut cum fugit
+                        qui
+                        excepturi
+                        ut commodi.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="col-md-3">
+                            <a class="btn btn-warning text-uppercase" href="#">optimize image</a>
+                        </div>
+
+                        <div class="user-stack">
+                            <img src="../../assets/images/user.jpg" alt="">
+                            <img src="../../assets/images/user.jpg" alt="">
+                            <img src="../../assets/images/user.jpg" alt="">
+                        </div>
+
+                        <div class="user-count">
+                            <span>Used by</span>
+                            <h4>5K PEOPLE</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="../../assets/images/image-illus.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <section class="mt-5 mb-5">
+            <form action="/target" class="dropzone" id="file-dropzone">
+                <p></p>
+            </form>
+            <script>
+                Dropzone.discover()
+                // Note that the name "myDropzone" is the camelized
+                // id of the form.
+                Dropzone.options.fileDropzone = {
+                    // Configuration options go here
+                    method: "post",
+                    paramName: "file", // The name that will be used to transfer the file
+                    maxFilesize: 2, // MB
+                    createImageThumbnails: false,
+                    paramName: "file"
+                };
+
+                var zone = document.getElementsByClassName('dz-default')[0];
+                var uploadbutton = document.getElementsByClassName('dz-button');
+                const uploadIcon = document.createElement('i')
+                uploadIcon.classList.add('bi');
+                uploadIcon.classList.add('bi-cloud-arrow-up-fill');
+                uploadIcon.classList.add('dz-upload-icon');
+
+                zone.textContent = 'Drop your image file here or select from your computer'
+                zone.prepend(uploadIcon);
+            </script>
+        </section>
+
+
+
+        <section>
+            <h2 class="text-center mb-4">How it works</h2>
+            <div class="row justify-content-center align-items-center row-gap-5">
+                <div class="col-sm-12 col-md-4 ">
+                    <div>
+                        <i class="bi bi-cloud-arrow-up-fill hw-icon"></i>
+                        <span>Choose a file to upload</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div>
+                        <i class="bi bi-gear-fill hw-icon"></i>
+                        <span>Input optimization settings</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div>
+                        <i class="bi bi-stack hw-icon"></i>
+                        <span>Add more images if you need to</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div>
+                        <i class="bi bi-send-fill hw-icon"></i>
+                        <span>Click “Start” button</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div>
+                        <i class="bi bi-hourglass-split hw-icon"></i>
+                        <span>Wait for optimization to complete</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div>
+                        <i class="bi bi-cloud-arrow-down-fill hw-icon"></i>
+                        <span>Download your file(s)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="../../assets/js/app.js"></script>
+</body>
+
+</html>

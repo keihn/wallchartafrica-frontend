@@ -1,105 +1,1008 @@
 /* oswald-200 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 200;
-    src: url('../fonts/Oswald-ExtraLight.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-300 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-ExtraLight.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/Oswald-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-Bold.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Oswald-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/Oswald-Medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-Medium.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/Oswald-SemiBold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* oswald-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/Oswald-SemiBold.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* oswald-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/Oswald-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
+    src: url('../fonts/Oswald-Bold.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 
-  /* inter-regular - latin */
+/* inter-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-         url('../fonts/inter-v13-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* inter-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../fonts/inter-v13-latin-regular.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-         url('../fonts/inter-v13-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
-  /* inter-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../fonts/inter-v13-latin-500.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-         url('../fonts/inter-v13-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
+    src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../fonts/inter-v13-latin-700.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 
+body {
+    position: relative;
+    height: 100%;
+    background-color: #F8F8F8;
+}
 
-  h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #262626;
     font-family: Oswald;
-  }
+}
 
+h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
-p, a{
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+p {
+    color: #262626;
     font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 188.889% */
+}
+
+small {
+    color: #262626;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.category-tag {
+    color: #279761;
+}
+
+.custom-line {
+    border: #CCC 1px solid;
+    margin: 30px auto;
+}
+
+.author-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    border: 1px solid #262626;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.author-name {
+    color: #262626;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.article-meta {
+    color: #262626;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.fancy-heading-alt {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.btn-bg-none {
+    color: #279761;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 200% */
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.post-content blockquote {
+    color: #262626;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.single-featured-container {
+    max-width: 100%;
+    height: 482px;
+}
+
+.single-featured-container .featured-image {
+    display: block;
+    min-width: 100%;
+    height: 482px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.sm-post-component {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.md-post-component {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sm-post-component .content {
+    width: 175px;
+    line-height: 20px;
+}
+
+.md-post-component .content {
+    align-self: stretch;
+    color: #262626;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 20px;
+}
+
+.post-mid-col.content {
+    align-self: stretch;
+    color: #262626;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 20px;
+}
+
+/* .sm-post-component .content .metadata {
+    display: inline-flex
+}
+
+.md-post-component .content .metadata {
+    display: inline-flex
+}
+
+.post-mid-col .content .metadata {
+    display: inline-flex;
+    font-family: Oswald;
+    font-weight: 700;
+}
+
+.sm-post-component .content .metadata a {
+    color: #279761;
+    font-family: Oswald;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.md-post-component .content .metadata a {
+    color: #279761;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.post-mid-col .content .metadata a {
+    color: #279761;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-decoration: none;
+} */
+
+.sm-post-component .featured-image .featured-small {
+    display: inline-block;
+    width: 129.6px;
+    height: 87px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.md-post-component .featured-image .featured-mid {
+    display: inline-block;
+    width: 175px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.featured-mid-col {
+    display: flex;
+    height: 169px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sm-post-component .content .headline {
+    text-decoration: none;
+}
+
+.sm-post-component .content,
+.headline h3 {
+    color: #262626;
+    flex-shrink: 0;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+.md-post-component .content .headline h3 {
+    color: #262626;
+    flex-shrink: 0;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+.post-mid-col .content .headline h3 {
+    align-self: stretch;
+    color: #262626;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.md-post-component .content .headline h3 {
+    color: #262626;
+    flex-shrink: 0;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+.sm-post-component .content .headline h3:hover {
+    color: #F60A0A;
+    cursor: pointer;
+}
+
+.md-post-component .content .headline h3:hover {
+    color: #F60A0A;
+    cursor: pointer;
+}
+
+.post-mid-col .headline h3:hover {
+    color: #F60A0A;
+    cursor: pointer;
+}
+
+.meta-divider {
+    color: #262626;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px 5px;
+}
+
+.post-nav {
+    color: #262626;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.comment-component .comment-content .comment-name {
+    color: #F60A0A;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.comment-component .comment-content .comment-time {
+    color: #262626;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.comment-component .comment-content .comment-text {
+    color: #262626;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 10px;
+    letter-spacing: 0.2px;
+}
+
+.comment-component .user-avatar i {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 10px 18px;
+    letter-spacing: 0.2px;
+    background-color: #F60A0A;
+    border-radius: 50%;
+}
+
+.comment-btn {
+    color: #737373;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 20px;
+    border-radius: 50px !important;
+    border: 1px solid #9B9999 !important;
+    background: #FFF !important;
+}
+
+/* CONTACT PAGE STYLES */
+.contact-heading {
+    color: #F60A0A;
+    font-family: Oswald;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.footer-posts {
+    row-gap: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 30px
+}
+
+.website-copyright {
+    color: #262626;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#contact-hero {
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/assets/images/contact-bg.jpg');
+    /* background: rgba(3, 3, 3, 0.065);
+    background-blend-mode: normal; */
+}
+
+#contact-hero h1 {
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+#contact-info {
+    background-color: #000000;
+    padding: 15px;
+}
+
+.contact-page a {
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.contact-page a:hover {
+    color: #F60A0A;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.contact-page .social-icons {
+    display: inline-flex;
+    align-items: center;
+    line-height: 25px;
+}
+
+.contact-page .social-icons svg {
+    margin-left: 10px;
+    width: 20px;
+}
+
+.contact-page .social-icons svg path {
+    fill: #ffffff;
+}
+
+.contact-page .social-icons svg path:hover {
+    fill: #F60A0A;
+}
+
+/* CONTACT PAGE STYLES END*/
+
+
+/* PRIVACY POLICY GENERATOR RESULT */
+
+.copy-box {
+    width: 600px;
+    height: 416px;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.copy-box ::-webkit-scrollbar {
+    width: 6px;
+    height: 217px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #BCBCBC;
+}
+
+.copy-box .copy-btn {
+    font-size: 12px;
+    border-radius: 2px;
+    background: #E6E6E6;
+    padding: 10px;
+    position: absolute;
+    right: 30px;
+    top: 16px;
+    border: none
+}
+
+.copy-box .copy-btn:hover {
+    font-size: 12px;
+    border-radius: 2px;
+    background: #9c9c9c;
+    color: #ffffff;
+}
+
+.copy-box p {
+    width: 376px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 183.333% */
+}
+
+.copy-box h4 {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.download-box {
+    margin-top: 62px;
+    display: inline-flex;
+    padding: 26px 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    border: 1px solid #E3E3E3;
+}
+
+.download-box h4 {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.download-box p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.download-box a {
+    color: #ffffff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 200% */
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+/* PRIVACY POLICY GENERATOR RESULT END*/
+
+/* IMAGE OPTIMIZER START */
+.io-hero {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../images/hero-io.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.io-hero a {
+    color: #ffffff;
+}
+
+.io-hero a:hover {
+    color: #ffffff;
 }
 
 
+.io-hero .user-count {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 280% */
+    letter-spacing: 0.2px;
+}
+.io-hero .user-count h4{
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 200% */
+    letter-spacing: 0.2px;
+}
+
+.user-stack img {
+    border-radius: 50%;
+    width: 10%;
+    margin-left: -10px;
+    border: 2px solid #FDCB00;
+}
+
+.hw-icon {
+    font-size: 20px;
+    color: #ffffff !important;
+    padding: 10px 13px;
+    border-radius: 50%;
+    background: #166841;
+}
+
+.hw-icon+span {
+    margin-left: 10px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dz-default {
+    display: flex;
+    flex-direction: column;
+}
+
+.dz-default .dz-upload-icon {
+    color: #304ffe;
+    font-size: 50px;
+}
+
+section h1 {
+    color: #279761;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.92px;
+}
+
+section h1+p {
+    width: 512px;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.6px;
+    /* 142.222% */
+    letter-spacing: -0.18px;
+}
+
+section h2 {
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.28px;
+}
+
+/* IMAGE OPTIMIZER END */
+
+/* FOOTER STYLES */
+
+.footer-title {
+    color: #F60A0A;
+    font-family: Oswald;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    gap: 16px;
+    color: #262626;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: #262626;
+    cursor: pointer;
+}
+
+.footer-links a:hover {
+    color: #F60A0A;
+    cursor: pointer;
+}
+
+/* FOOTER STYLES END*/
+
+
+/* BOOTSTRAP FORMS OVERRIDE */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .69rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #868484;
+    font-family: Inter;
+}
+
+.btn {
+    background-color: #279761;
+    border-color: #279761;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #166841;
+    border-color: #279761;
+    border-radius: 3px;
+}
+
+.continue-reading {
+    color: #F60A0A;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact-page button {
+    /* line-height: 0px; */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 200% */
+    letter-spacing: 0.8px;
+}
+
+.contact-page button svg {
+    /* line-height: 0px; */
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+.form-check-input {
+    border: 1px solid #888888;
+}
+
+/* BOOTSTRAP FORMS OVERRIDE END*/
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
 
- /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+/* Small devices */
+@media (max-width: 365px) {
+    h1 {
+        width: 100%;
+        font-family: Oswald;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    .author-name {
+        font-family: Oswald;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .single-featured-container {
+        max-width: 100%;
+        height: 248px;
+    }
+
+    .trending-sidebar {
+        display: none;
+    }
+
+    .fancy-heading-alt {
+        margin-top: 30px;
+    }
+
+    .single-featured-container .featured-image {
+        display: block;
+        min-width: 100%;
+        height: 248px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .md-post-component {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .md-post-component .featured-image .featured-mid {
+        display: inline-block;
+        width: 100%;
+        height: 120px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .featured-mid-col {
+        display: flex;
+        height: 169px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        align-self: stretch;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .social-icons-wrapper {
+        margin-top: 20px
+    }
+
+    .post-nav-wrapper .sm-post-component {
+        display: none;
+    }
+
+    .user-avatar {
+        margin-bottom: 20px;
+    }
+
+    .custom-heading {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-heading:nth-child(odd) {
+        /* visibility: hidden; */
+    }
+
+    .custom-heading h2 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .website-copyright {
+        color: #262626;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        line-height: 19.2px;
+    }
+
+}
+
+/* @media (min-width: 576px) {
+
+} */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { }
+@media (min-width: 1400px) {}
