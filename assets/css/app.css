@@ -680,6 +680,113 @@ footer {
 
 /* PRIVACY POLICY GENERATOR RESULT END*/
 
+/* IMAGE OPTIMIZER START */
+.io-hero {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../images/hero-io.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.io-hero a {
+    color: #ffffff;
+}
+
+.io-hero a:hover {
+    color: #ffffff;
+}
+
+
+.io-hero .user-count {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 280% */
+    letter-spacing: 0.2px;
+}
+.io-hero .user-count h4{
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 200% */
+    letter-spacing: 0.2px;
+}
+
+.user-stack img {
+    border-radius: 50%;
+    width: 10%;
+    margin-left: -10px;
+    border: 2px solid #FDCB00;
+}
+
+.hw-icon {
+    font-size: 20px;
+    color: #ffffff !important;
+    padding: 10px 13px;
+    border-radius: 50%;
+    background: #166841;
+}
+
+.hw-icon+span {
+    margin-left: 10px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dz-default {
+    display: flex;
+    flex-direction: column;
+}
+
+.dz-default .dz-upload-icon {
+    color: #304ffe;
+    font-size: 50px;
+}
+
+section h1 {
+    color: #279761;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.92px;
+}
+
+section h1+p {
+    width: 512px;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.6px;
+    /* 142.222% */
+    letter-spacing: -0.18px;
+}
+
+section h2 {
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.28px;
+}
+
+/* IMAGE OPTIMIZER END */
+
 /* FOOTER STYLES */
 
 .footer-title {
