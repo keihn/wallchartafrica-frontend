@@ -741,8 +741,6 @@ header .navbar-toggler-icon {
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 16px;
-    align-items: center; 
-    padding: 16px; 
 }
 
 .other-article .article-img {
