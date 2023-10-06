@@ -183,14 +183,6 @@ footer {
     line-height: normal;
 }
 
-.article-meta {
-    color: #262626;
-    font-family: Oswald;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-}
 
 .fancy-heading-alt {
     display: flex;
@@ -266,58 +258,6 @@ footer {
     line-height: 20px;
 }
 
-.post-mid-col.content {
-    align-self: stretch;
-    color: #262626;
-    font-family: Oswald;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    line-height: 20px;
-}
-
-/* .sm-post-component .content .metadata {
-    display: inline-flex
-}
-
-.md-post-component .content .metadata {
-    display: inline-flex
-}
-
-.post-mid-col .content .metadata {
-    display: inline-flex;
-    font-family: Oswald;
-    font-weight: 700;
-}
-
-.sm-post-component .content .metadata a {
-    color: #279761;
-    font-family: Oswald;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.md-post-component .content .metadata a {
-    color: #279761;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 27px;
-    text-decoration: none;
-}
-
-.post-mid-col .content .metadata a {
-    color: #279761;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 27px;
-    text-decoration: none;
-} */
 
 .sm-post-component .featured-image .featured-small {
     display: inline-block;
@@ -346,9 +286,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-.sm-post-component .content .headline {
-    text-decoration: none;
-}
+
 
 .sm-post-component .content,
 .headline h3 {
@@ -375,15 +313,6 @@ footer {
     transition: ease-in 0.2s;
 }
 
-.post-mid-col .content .headline h3 {
-    align-self: stretch;
-    color: #262626;
-    font-family: Oswald;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
 
 .md-post-component .content .headline h3 {
     color: #262626;
@@ -403,11 +332,6 @@ footer {
 }
 
 .md-post-component .content .headline h3:hover {
-    color: #F60A0A;
-    cursor: pointer;
-}
-
-.post-mid-col .headline h3:hover {
     color: #F60A0A;
     cursor: pointer;
 }
@@ -896,7 +820,7 @@ section h2 {
 
     .author-name {
         font-family: Oswald;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -940,17 +864,7 @@ section h2 {
         background-repeat: no-repeat;
     }
 
-    .featured-mid-col {
-        display: flex;
-        height: 169px;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-shrink: 0;
-        align-self: stretch;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+
 
     .social-icons-wrapper {
         margin-top: 20px
@@ -968,10 +882,6 @@ section h2 {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .custom-heading:nth-child(odd) {
-        /* visibility: hidden; */
     }
 
     .custom-heading h2 {

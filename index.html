@@ -1,36 +1,1083 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Wallchart Africa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../assets/css/app.css">
-    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Wallchart Africa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/assets/fonts/oswald/style.css" rel="stylesheet">
+  <link href="/assets/fonts/inter/style.css" rel="stylesheet">
+  <link href="/assets/css/app.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <script src="/assets/js/ticker.js"></script>
+  <script src="/assets/js/carousel-trend-ticker.js"></script>
+  <script src="/assets/js/carousel-trend-click.js"></script>
+  <script src="/assets/js/sidebar.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/app.js"></script>
 </head>
-
-
 <body>
-
-    <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is the body text.</p>
+<div class="wrapper">
+    <header>
+        <div class="container">        
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between inner-header">        
+                        <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" class="logo"></a>
+                        <div class="desktop-only">
+                            <div class="d-flex align-items-center">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/advertise.html">Advertise with us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/contact.html">Contact</a>
+                                    </li>    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/tools.html">Tools</a>
+                                    </li>    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/buy-sell-crypto.html">Buy & Sell Crypto</a>
+                                    </li>    
+                                </ul>
+                                <a class="profile-icon float-end" href="/profile.html"><img src="/assets/images/profile.svg"></a>
+                                <button class="navbar-toggler float-end d-block" type="button" onclick="openSideBar()">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>            
+                        </div>
+                        <div class="tab-to-mobile">
+                            <div class="d-flex align-items-center">
+                                <a class="profile-icon" href="/profile.html"><img src="/assets/images/profile.svg"></a>
+                                <button class="navbar-toggler" type="button" onclick="openSideBar()">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid bg-main">
+            <div  id="ticker-container" class="ticker-view container">
+                <div class="ticker-container" style="height: 38px; position: relative">
+                    <div class="ticker-item">
+                        <a class="ticker-link" href="#">NEWS</a>
+                    </div>
+                    <div class="ticker-item">
+                        <a class="ticker-link" href="#">EDUCATION</a>
+                    </div>
+                    <div class="ticker-item">
+                        <a class="ticker-link" href="#">ENTERTAINMENT</a>
+                    </div>
+                    <div class="ticker-item">
+                        <a class="ticker-link" href="#">LIFESTYLE</a>
+                    </div>
+                    <div class="ticker-item">
+                        <a class="ticker-link" href="#">TECHNOLOGY</a>
+                    </div>
+                    <div class="ticker-item">
+                        <a class="ticker-link" href="#">FINANCE</a>
+                    </div>
+                    <div class="ticker-item">
+                        <a class="ticker-link" href="#">SPORTS</a>
+                    </div>
+                    <div class="ticker-item">
+                        <a class="ticker-link" href="#">TRAVEL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-4">
+        <section id="trending-section">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                                    
+                    <!-- Carousel -->
+                    <div id="homecarousel" class="carousel slide" data-bs-ride="carousel">
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <!-- Trending Now -->
+                            <div class="carousel-trend-title">
+                                <h4>Trending Now</h4>
+                            </div>
+                            <div class="carousel-trend">
+                                <div class="carousel-trend-ticker">
+                                    <div id="carousel-trend-ticker" class="carousel-trend-ticker-items-container">
+                                        <div class="carousel-trend-ticker-items">
+                                            <a href="#news">NEWS</a>
+                                        </div>
+                                        <div class="carousel-trend-ticker-items">
+                                            <a href="#education">EDUCATION</a>
+                                        </div>
+                                        <div class="carousel-trend-ticker-items">
+                                            <a href="#entertainment">ENTERTAINMENT</a>
+                                        </div>
+                                        <div class="carousel-trend-ticker-items">
+                                            <a href="#lifestyle">LIFESTYLE</a>
+                                        </div>
+                                        <div class="carousel-trend-ticker-items">
+                                            <a href="#technology">TECHNOLOGY</a>
+                                        </div>
+                                        <div class="carousel-trend-ticker-items">
+                                            <a href="#finance">FINANCE</a>
+                                        </div>
+                                        <div class="carousel-trend-ticker-items">
+                                            <a href="#sports">SPORTS</a>
+                                        </div>
+                                        <div class="carousel-trend-ticker-items">
+                                            <a class="active" href="#travel">TRAVEL</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-trend-ticker-button-container">
+                                        <div onclick="prevTicker()" id="carousel-trend-ticker-prev" class="carousel-trend-ticker-button">
+                                            <img src="/assets/images/left-angle-arrow.svg">
+                                        </div>
+                                        <div onclick="nextTicker()" id="carousel-trend-ticker-next" class="carousel-trend-ticker-button">
+                                            <img src="/assets/images/right-angle-arrow.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="carousel-item active">
+                            <img src="/assets/images/post/bg1.png" alt="Eaque quis vel id ab eveniet dolor. Quis ex hic id culpa quis maxime distinctio. Rem sit aut sequi consequatur alias." class="d-block" style="width:auto">
+                            <div class="carousel-caption">
+                            <h3>Eaque quis vel id ab eveniet dolor. Quis ex hic id culpa quis maxime distinctio. Rem sit aut sequi consequatur alias.</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/post/bg1.png" alt="Eaque quis vel id ab eveniet dolor. Quis ex hic id culpa quis maxime distinctio. Rem sit aut sequi consequatur alias." class="d-block" style="width:auto">
+                            <div class="carousel-caption">
+                            <h3>Eaque quis vel id ab eveniet dolor. Quis ex hic id culpa quis maxime distinctio. Rem sit aut sequi consequatur alias.</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/post/bg1.png" alt="Eaque quis vel id ab eveniet dolor. Quis ex hic id culpa quis maxime distinctio. Rem sit aut sequi consequatur alias." class="d-block" style="width:auto">
+                            <div class="carousel-caption">
+                            <h3>Eaque quis vel id ab eveniet dolor. Quis ex hic id culpa quis maxime distinctio. Rem sit aut sequi consequatur alias.</h3>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#homecarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#homecarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+    
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <!-- Post Component -->
+                    <div id="homeposttab">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#homelatest">Latest</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#homecomments">Comments</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#homepopular">Popular</a>
+                            </li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="homelatest">
+                                <div class="post-item">
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane container fade" id="homecomments">
+                                <div class="post-item">
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane container fade" id="homepopular">
+                                <div class="post-item">
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                    <div class="post-content">
+                                        <p>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. <span class="post-date">20 Aug, 2023</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="featured-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <div class="section-title-line"><img style="width:100%" src="/assets/images/title-line.png"></div>
+                        <div>
+                            <h2>FEATURED</h2>
+                        </div>
+                        <div class="section-title-line"><img style="width:100%" src="/assets/images/title-line.png"></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                              
+                    <!-- Carousel -->
+                    <div id="featuredcarousel1" class="carousel slide tab-only" data-bs-ride="carousel">
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-img-container">
+                                    <img src="/assets/images/post/11a8334887b7240ea089a37b0aba9236.jpg" alt="Eaque quis vel id ab eveniet dolor. Quis ex hic id culpa quis maxime distinctio. Rem sit aut sequi consequatur alias." class="d-block">
+                                    <div class="carousel-img-overlay"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <div class="caption-info">
+                                        <div class="caption-category" ><span>POLITICS</span></div>
+                                        <div class="caption-info-seperator"><span>\</span></div>
+                                        <div class="caption-date"><span>20 SEP, 2023</span></div>
+                                    </div>
+                                    <div class="caption-title">
+                                        <h3>Eaque quis vel id ab eveniet dolor. Quis ex hic id culpa quis maxime distinctio. Rem sit aut sequi consequatur alias.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div id="homesideads" class="side-ads">
+                        <div id="ad-panel-1" class="ad-panel">
+                            <img src="/assets/images/ads/8402cc1d0f80de35d25b2008efe2f950.jpg" />
+                            <div class="ads-anchor-container">
+                                <div class="ads-anchor">
+                                    <span>ADS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ad-panel-2" class="ad-panel">
+                            <img src="/assets/images/ads/ef4056d82bed5d28db769af80510a2c9.jpg" />
+                            <div class="ads-anchor-container">
+                                <div class="ads-anchor">
+                                    <span>ADS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="featured-post-container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="each-post-container">
+                                    <div class="each-post-img">
+                                    </div>
+                                    <div class="each-post-info">
+                                        <div class="each-post-category"><span>ENTERTAINMENT</span></div>
+                                        <div class="each-post-seperator">\</div>
+                                        <div class="each-post-date">20 aug, 2023</div>
+                                    </div>
+                                    <div class="each-post-description"><span>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex.</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="each-post-container">
+                                    <div class="each-post-img">
+                                    </div>
+                                    <div class="each-post-info">
+                                        <div class="each-post-category"><span>ENTERTAINMENT</span></div>
+                                        <div class="each-post-seperator">\</div>
+                                        <div class="each-post-date">20 aug, 2023</div>
+                                    </div>
+                                    <div class="each-post-description"><span>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex.</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="each-post-container">
+                                    <div class="each-post-img">
+                                    </div>
+                                    <div class="each-post-info">
+                                        <div class="each-post-category"><span>ENTERTAINMENT</span></div>
+                                        <div class="each-post-seperator">\</div>
+                                        <div class="each-post-date">20 aug, 2023</div>
+                                    </div>
+                                    <div class="each-post-description"><span>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex.</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="each-post-container">
+                                    <div class="each-post-img">
+                                    </div>
+                                    <div class="each-post-info">
+                                        <div class="each-post-category"><span>ENTERTAINMENT</span></div>
+                                        <div class="each-post-seperator">\</div>
+                                        <div class="each-post-date">20 aug, 2023</div>
+                                    </div>
+                                    <div class="each-post-description"><span>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex.</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="each-post-container">
+                                    <div class="each-post-img">
+                                    </div>
+                                    <div class="each-post-info">
+                                        <div class="each-post-category"><span>ENTERTAINMENT</span></div>
+                                        <div class="each-post-seperator">\</div>
+                                        <div class="each-post-date">20 aug, 2023</div>
+                                    </div>
+                                    <div class="each-post-description"><span>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex.</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="each-post-container">
+                                    <div class="each-post-img">
+                                    </div>
+                                    <div class="each-post-info">
+                                        <div class="each-post-category"><span>ENTERTAINMENT</span></div>
+                                        <div class="each-post-seperator">\</div>
+                                        <div class="each-post-date">20 aug, 2023</div>
+                                    </div>
+                                    <div class="each-post-description"><span>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex.</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="each-post-container">
+                                    <div class="each-post-img">
+                                    </div>
+                                    <div class="each-post-info">
+                                        <div class="each-post-category"><span>ENTERTAINMENT</span></div>
+                                        <div class="each-post-seperator">\</div>
+                                        <div class="each-post-date">20 aug, 2023</div>
+                                    </div>
+                                    <div class="each-post-description"><span>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex.</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="each-post-container">
+                                    <div class="each-post-img">
+                                    </div>
+                                    <div class="each-post-info">
+                                        <div class="each-post-category"><span>ENTERTAINMENT</span></div>
+                                        <div class="each-post-seperator">\</div>
+                                        <div class="each-post-date">20 aug, 2023</div>
+                                    </div>
+                                    <div class="each-post-description"><span>Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="more-articles1" class="tab-only">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <div class="section-title-line"><img style="width:100%" src="/assets/images/title-line.png"></div>
+                        <div>
+                            <h2>MORE ARTICLES</h2>
+                        </div>
+                        <div class="section-title-line"><img style="width:100%" src="/assets/images/title-line.png"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    
+                    <!-- Carousel -->
+                    <div id="morearticlescarousel1" class="carousel slide" data-bs-ride="carousel">
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-img-container">
+                                    <img src="/assets/images/post/039230230939.png" alt="Fugit qui porro dolorum quis delectus ea nulla. A rem nulla asperiores sequi rerum omnis." class="d-block">
+                                    <div class="carousel-img-overlay"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <div class="caption-info">
+                                        <div class="caption-category" ><span>POLITICS</span></div>
+                                        <div class="caption-info-seperator"><span>\</span></div>
+                                        <div class="caption-date"><span>20 SEP, 2023</span></div>
+                                    </div>
+                                    <div class="caption-title">
+                                        <h3>Fugit qui porro dolorum quis delectus ea nulla. A rem nulla asperiores sequi rerum omnis.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="other-articles">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="other-article">
+                                    <div class="article-container d-inline-flex">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="other-article">
+                                    <div class="article-container d-inline-flex">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="other-article">
+                                    <div class="article-container d-inline-flex">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="other-article">
+                                    <div class="article-container d-inline-flex">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="other-article">
+                                    <div class="article-container d-inline-flex">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="other-article">
+                                    <div class="article-container d-inline-flex">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="other-article">
+                                    <div class="article-container d-inline-flex">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="other-article">
+                                    <div class="article-container d-inline-flex">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js"
-    integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc"
-    crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
-    integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
-    crossorigin="anonymous"></script>
-<script src="../../assets/js/app.js"></script>
-</body>
+    <div class="container-fluid bg-grey">
+        <div class="container">
+            <section id="featured-section-two">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <div class="section-title-line"><img style="width:100%" src="/assets/images/title-line.png"></div>
+                            <div>
+                                <h2>FEATURED</h2>
+                            </div>
+                            <div class="section-title-line"><img style="width:100%" src="/assets/images/title-line.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                    
+                        <!-- Carousel -->
+                        <div id="featuredtwocarousel" class="carousel slide" data-bs-ride="carousel">
+                            
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-img-container">
+                                        <img src="/assets/images/post/5a20fdd5f76730d6d5fe3ea9e8215205.jpg" alt="Fugit qui porro dolorum quis delectus ea nulla. A rem nulla asperiores sequi rerum omnis." class="d-block">
+                                        <div class="carousel-img-overlay"></div>
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <div class="caption-info">
+                                            <div class="caption-category" ><span>POLITICS</span></div>
+                                            <div class="caption-info-seperator"><span>\</span></div>
+                                            <div class="caption-date"><span>20 SEP, 2023</span></div>
+                                        </div>
+                                        <div class="caption-title">
+                                            <h3>Fugit qui porro dolorum quis delectus ea nulla. A rem nulla asperiores sequi rerum omnis.</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="featuredtwoside-cont">
+                            <div class="featuredtwoside">
+                                <div class="featuredtwosideimg">
+                                </div>
+                                <div class="featuredtwosideinfo">
+                                    <div class="featuredtwoside-cat"><span>ENTERTAINMENT</span></div>
+                                    <div class="featuredtwoside-sep"><span>\</span></div>
+                                    <div class="featuredtwoside-date"><span>20 aug, 2023</span></div>
+                                </div>
+                                <div class="featuredtwoside-title">Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. </div>
+                            </div>
+                            <div class="featuredtwoside">
+                                <div class="featuredtwosideimg">
+                                </div>
+                                <div class="featuredtwosideinfo">
+                                    <div class="featuredtwoside-cat"><span>ENTERTAINMENT</span></div>
+                                    <div class="featuredtwoside-sep"><span>\</span></div>
+                                    <div class="featuredtwoside-date"><span>20 aug, 2023</span></div>
+                                </div>
+                                <div class="featuredtwoside-title">Voluptatem eos aliquid pariatur sit ad eius quia voluptate. Earum atque occaecati consectetur eum et ex. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <section id="more-articles2" class="mobile-only">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <div class="section-title-line"><img style="width:100%" src="/assets/images/title-line.png"></div>
+                        <div>
+                            <h2>MORE ARTICLES</h2>
+                        </div>
+                        <div class="section-title-line"><img style="width:100%" src="/assets/images/title-line.png"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="other-articles">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="other-article">
+                                    <div class="article-container">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="other-article">
+                                    <div class="article-container">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="other-article">
+                                    <div class="article-container">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="other-article">
+                                    <div class="article-container">
+                                        <div class="article-img">
+                                        </div>
+                                        <div class="article-description">
+                                            <div class="article-info d-inline-flex">
+                                                <div class="article-category"><span>POLITICS</span></div>
+                                                <div class="article-seperator">\</div>
+                                                <div class="article-date">20 Sep, 2023</div>
+                                            </div>
+                                            <div class="article-title">
+                                                <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident. Distinctio est </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
 
+            <div class="custom-line"></div>
+
+            <div class="row justify-content-start align-items-start mt-5">
+                <div class="col-sm-1 col-md-3 mb-5">
+                    <div class="footer-title">PAGES</div>
+                    <div class="footer-links mt-4">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-3 mb-5">
+                    <div class="footer-title">COMPANY</div>
+                    <div class="footer-links mt-4">
+                        <a href="#">Advertise with us</a>
+                        <a href="#">Join the team</a>
+                        <a href="#">Buy &amp; Sell Crypto</a>
+                        <a href="#">Write for us</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-5">
+                    <div class="footer-title">CATEGORIES</div>
+                    <div class="footer-links mt-4">
+                        <a href="#">Technology</a>
+                        <a href="#">Education</a>
+                        <a href="#">News</a>
+                        <a href="#">Travel</a>
+                        <a href="#">Finance</a>
+                        <a href="#">Sports</a>
+                        <a href="#">Entertainment</a>
+                        <a href="#">Lifestyle</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-5">
+                    <div class="footer-title">LAGAL</div>
+                    <div class="footer-links mt-4">
+                        <a href="#">Terms and conditions</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="continue-reading">CONTINUE READING</h5>
+
+            <div class="footer-posts">
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-post-component mt-3">
+                    <div>
+                        <div class="featured-image">
+                            <span class="featured-small"
+                                style="background-image: url(/assets/images/fixed-aspect-ratio-spacer-variants-4334-landscape.jpg);"></span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="article-meta d-inline-flex">
+                            <a href="">
+                                <h6 class="category-tag">POLITICS</h6>
+                            </a>
+                            <span class="meta-divider">\</span>
+                            <span>12 Oct, 2022</span>
+                        </div>
+                        <a class="headline" href="">
+                            <h3>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam provident.
+                                Distinctio
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-line"></div>
+            <div class="text-center website-copyright">
+                © Wallchart Africa. 2023. All Rights Reserved | Developed by Osai
+                Technologies
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="sidenav" id="sidebar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/advertise.html">Advertise with us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="/tools.html">Tools</a>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="/buy-sell-crypto.html">Buy & Sell Crypto</a>
+        </li>
+    </ul>
+    <button class="navbar-toggler" type="button" onclick="closeSideBar()">
+        <span class="btn-close"></span>
+    </button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+
+<script src="/assets/js/app.js"></script>
+</body>
 </html>
