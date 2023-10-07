@@ -1506,7 +1506,7 @@ header .navbar-toggler-icon {
 .hw-icon {
     font-size: 20px;
     color: #ffffff !important;
-    padding: 10px 13px;
+    padding: 10px 15px;
     border-radius: 50%;
     background: #166841;
 }
@@ -1540,7 +1540,7 @@ header .navbar-toggler-icon {
     letter-spacing: -1.92px;
 }
 
-.io-hero h1+p {
+.io-hero p {
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -1549,6 +1549,18 @@ header .navbar-toggler-icon {
     /* 142.222% */
     letter-spacing: -0.18px;
     word-wrap: break-word;
+}
+
+.how-to-list {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
 }
 
 
@@ -2096,7 +2108,7 @@ header .navbar-toggler-icon {
 
     .io-hero h1 {
         width: 100%;
-        font-size: 18px;
+        font-size: 32px;
         color: #279761;
         font-family: Inter;
         font-style: normal;
@@ -2105,6 +2117,44 @@ header .navbar-toggler-icon {
         letter-spacing: -1.92px;
     }
 
+    .io-hero p {
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.6px;
+        letter-spacing: -0.18px;
+        word-wrap: break-word;
+    }
+
+    .hero-illustration {
+        margin-top: 20px;
+    }
+
+    .hero-illustration img {
+        display: none;
+    }
+
+    .how-to-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type: none;
+    }
+
+
+    .how-to-list li {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+
+    }
 }
 
 @media screen and (max-width:300px) {
