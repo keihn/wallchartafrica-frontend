@@ -1929,13 +1929,6 @@ header .navbar-toggler-icon {
 
 }
 
-@media (max-width:575px) {
-
-    #homecarousel {
-        /* height:295px; */
-    }
-}
-
 @media screen and (max-width:500px) {
 
     #homecarousel {
@@ -2119,23 +2112,7 @@ header .navbar-toggler-icon {
         line-height: 19.2px;
     }
 
-    .io-hero {
-        background-image: url(../images/hero-io.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right top;
-    }
-
-    .io-hero h1 {
-        width: 100%;
-        font-size: 32px;
-        color: #ffffff;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: -1.92px;
-    }
+   
 
     .io-hero p {
         font-family: Inter;
@@ -2160,26 +2137,7 @@ header .navbar-toggler-icon {
         display: none;
     }
 
-    .how-to-list {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        list-style-type: none;
-    }
-
-
-    .how-to-list li {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: start;
-
-    }
+   
 }
 
 @media screen and (max-width:300px) {
@@ -2198,7 +2156,57 @@ header .navbar-toggler-icon {
         font-size: 18px;
     }
 
+   
+
+    
+}
+
+
+@media (max-width: 576px) { 
+    .io-hero {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        background-image: url(../images/hero-io.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top;
+    }
+
+    .io-hero h1 {
+        width: 100%;
+        font-size: 32px;
+        color: #ffffff;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -1.92px;
+    }
+
     .hero-illustration img {
         display: none;
     }
-}
+
+    .how-to-list {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type: none;
+    }
+
+    .how-to-list li {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+    }
+ }
