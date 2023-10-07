@@ -1985,6 +1985,10 @@ header .navbar-toggler-icon {
     #homecarousel .carousel-control-prev-icon {
         background-size: 80% 80%;
     }
+
+    .hero-illustration img {
+        display: none;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -2160,7 +2164,7 @@ header .navbar-toggler-icon {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 50px;
         margin-left: auto;
@@ -2192,5 +2196,9 @@ header .navbar-toggler-icon {
 
     .sidenav a {
         font-size: 18px;
+    }
+
+    .hero-illustration img {
+        display: none;
     }
 }
