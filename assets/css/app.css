@@ -1487,12 +1487,21 @@ header .navbar-toggler-icon {
     letter-spacing: 0.2px;
 }
 
+.hero-illustration img {
+    width: 50%
+}
+
 .user-stack img {
     border-radius: 50%;
     width: 40px;
-    margin-left: -10px;
     border: 2px solid #FDCB00;
 }
+
+.user-stack img:nth-child(2),
+.user-stack img:nth-child(3) {
+    margin-left: -20px;
+}
+
 
 .how-to h2 {
     font-family: Inter;
@@ -2106,10 +2115,17 @@ header .navbar-toggler-icon {
         line-height: 19.2px;
     }
 
+    .io-hero {
+        background-image: url(../images/hero-io.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top;
+    }
+
     .io-hero h1 {
         width: 100%;
         font-size: 32px;
-        color: #279761;
+        color: #ffffff;
         font-family: Inter;
         font-style: normal;
         font-weight: 600;
@@ -2125,6 +2141,11 @@ header .navbar-toggler-icon {
         line-height: 25.6px;
         letter-spacing: -0.18px;
         word-wrap: break-word;
+    }
+
+    .user-count span,
+    .user-count h4 {
+        color: #ffffff;
     }
 
     .hero-illustration {
