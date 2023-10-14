@@ -1842,7 +1842,7 @@ background: #FFF;
 .form-control {
     display: block;
     width: 100%;
-    padding: .69rem .75rem;
+    padding: .69rem .75rem !important;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
