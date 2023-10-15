@@ -1,181 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Wallchart Africa</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy policy - Wallchart Africa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link href="assets/fonts/oswald/style.css" rel="stylesheet">
+    <link href="assets/fonts/inter/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+    <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
+    <script src="../../assets/js/optimize.js"></script>
+    <link href="../../assets/css/app.css" rel="stylesheet">
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <title>Wallchart Africa</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="assets/fonts/oswald/style.css" rel="stylesheet">
-        <link href="assets/fonts/inter/style.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
-        <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
-        <script src="../../assets/js/optimize.js"></script>
-        <link href="../../assets/css/app.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <div class="wrapper">
-            <header>
-                <div class="container">
-                    <nav class="navbar navbar-expand-sm">
-                        <div class="container-fluid">
-                            <div class="d-flex align-items-center justify-content-between inner-header">
-                                <a class="navbar-brand" href="/"><img src="../../assets/images/logo.png" class="logo"></a>
-                                <div class="desktop-only">
-                                    <div class="d-flex align-items-center">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="/">Home</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/advertise.html">Advertise with us</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/contact.html">Contact</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/tools.html">Tools</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/buy-sell-crypto.html">Buy & Sell Crypto</a>
-                                            </li>
-                                        </ul>
-                                        <a class="profile-icon float-end" href="/profile.html"><img
-                                                src="../../assets/images/profile.svg"></a>
-                                        <button class="navbar-toggler float-end d-block" type="button"
-                                            onclick="openSideBar()">
-                                            <span class="navbar-toggler-icon"></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="tab-to-mobile">
-                                    <div class="d-flex align-items-center">
-                                        <a class="profile-icon" href="/profile.html"><img
-                                                src="assets/images/profile.svg"></a>
-                                        <button class="navbar-toggler" type="button" onclick="openSideBar()">
-                                            <span class="navbar-toggler-icon"></span>
-                                        </button>
-                                    </div>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between inner-header">
+                            <a class="navbar-brand" href="/"><img src="../../assets/images/logo.png" class="logo"></a>
+                            <div class="desktop-only">
+                                <div class="d-flex align-items-center">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="/">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/advertise.html">Advertise with us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/contact.html">Contact</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/tools.html">Tools</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/buy-sell-crypto.html">Buy & Sell Crypto</a>
+                                        </li>
+                                    </ul>
+                                    <a class="profile-icon float-end" href="/profile.html"><img
+                                            src="../../assets/images/profile.svg"></a>
+                                    <button class="navbar-toggler float-end d-block" type="button"
+                                        onclick="openSideBar()">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                    </nav>
-                </div>
-                <div class="container-fluid bg-main">
-                    <div id="ticker-container" class="ticker-view container">
-                        <div class="ticker-container" style="height: 38px; position: relative">
-                            <div class="ticker-item">
-                                <a class="ticker-link" href="category.html">NEWS</a>
-                            </div>
-                            <div class="ticker-item">
-                                <a class="ticker-link" href="category.html">EDUCATION</a>
-                            </div>
-                            <div class="ticker-item">
-                                <a class="ticker-link" href="category.html">ENTERTAINMENT</a>
-                            </div>
-                            <div class="ticker-item">
-                                <a class="ticker-link" href="category.html">LIFESTYLE</a>
-                            </div>
-                            <div class="ticker-item">
-                                <a class="ticker-link" href="category.html">TECHNOLOGY</a>
-                            </div>
-                            <div class="ticker-item">
-                                <a class="ticker-link" href="category.html">FINANCE</a>
-                            </div>
-                            <div class="ticker-item">
-                                <a class="ticker-link" href="category.html">SPORTS</a>
-                            </div>
-                            <div class="ticker-item">
-                                <a class="ticker-link" href="category.html">TRAVEL</a>
+                            <div class="tab-to-mobile">
+                                <div class="d-flex align-items-center">
+                                    <a class="profile-icon" href="/profile.html"><img
+                                            src="assets/images/profile.svg"></a>
+                                    <button class="navbar-toggler" type="button" onclick="openSideBar()">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </nav>
+            </div>
+            <div class="container-fluid bg-main">
+                <div id="ticker-container" class="ticker-view container">
+                    <div class="ticker-container" style="height: 38px; position: relative">
+                        <div class="ticker-item">
+                            <a class="ticker-link" href="category.html">NEWS</a>
+                        </div>
+                        <div class="ticker-item">
+                            <a class="ticker-link" href="category.html">EDUCATION</a>
+                        </div>
+                        <div class="ticker-item">
+                            <a class="ticker-link" href="category.html">ENTERTAINMENT</a>
+                        </div>
+                        <div class="ticker-item">
+                            <a class="ticker-link" href="category.html">LIFESTYLE</a>
+                        </div>
+                        <div class="ticker-item">
+                            <a class="ticker-link" href="category.html">TECHNOLOGY</a>
+                        </div>
+                        <div class="ticker-item">
+                            <a class="ticker-link" href="category.html">FINANCE</a>
+                        </div>
+                        <div class="ticker-item">
+                            <a class="ticker-link" href="category.html">SPORTS</a>
+                        </div>
+                        <div class="ticker-item">
+                            <a class="ticker-link" href="category.html">TRAVEL</a>
+                        </div>
+                    </div>
                 </div>
-            </header>
+            </div>
+        </header>
 
-            <section class="container mt-5">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-12 col-md-6">
-                        <h1 class="text-center privacy-heading">PRIVACY POLICY GENERATOR</h1>
-                        <div class="mt-5">
-                            <form action="">
-                                <div class=" gy-5">
-                                    <div>
-                                        <div class="mb-5">
-                                            <span>Information collected from device</span>
-                                            <div class="form-group mt-3">
-                                                <div class="row">
-                                                    <div class="col-12 col-md-4">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="inlineCheckbox1" value="option1">
-                                                            <label class="form-check-label"
-                                                                for="inlineCheckbox1">Location
-                                                                (GPS)</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="inlineCheckbox2" value="option2">
-                                                            <label class="form-check-label" for="inlineCheckbox2">Push
-                                                                notifications</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="inlineCheckbox2" value="option2">
-                                                            <label class="form-check-label"
-                                                                for="inlineCheckbox2">Contact
-                                                                list</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="inlineCheckbox2" value="option2">
-                                                            <label class="form-check-label"
-                                                                for="inlineCheckbox2">Camera</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <span class="mt-5">How do users contact you concerning their
-                                            information and privacy</span>
+        <section class="container mt-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6">
+                    <h1 class="text-center privacy-heading">PRIVACY POLICY GENERATOR</h1>
+                    <div class="mt-5">
+                        <form action="">
+                            <div class=" gy-5">
+                                <div>
+                                    <div class="mb-5">
+                                        <span>Information collected from device</span>
                                         <div class="form-group mt-3">
                                             <div class="row">
-                                                <div class="col--12 col-md-4">
+                                                <div class="col-12 col-md-4">
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox"
                                                             id="inlineCheckbox1" value="option1">
-                                                        <label class="form-check-label" for="inlineCheckbox1">By
-                                                            email</label>
+                                                        <label class="form-check-label" for="inlineCheckbox1">Location
+                                                            (GPS)</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox"
                                                             id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">By
-                                                            phone</label>
+                                                        <label class="form-check-label" for="inlineCheckbox2">Push
+                                                            notifications</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox"
                                                             id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">Post mail
-                                                            service</label>
+                                                        <label class="form-check-label" for="inlineCheckbox2">Contact
+                                                            list</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox"
@@ -186,172 +136,202 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="mt-3">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox"
-                                                    id="flexSwitchCheckDefault">
-                                                <label class="form-check-label" for="flexSwitchCheckDefault">Save my
-                                                    data for later</label>
+                                    <span class="mt-5">How do users contact you concerning their
+                                        information and privacy</span>
+                                    <div class="form-group mt-3">
+                                        <div class="row">
+                                            <div class="col--12 col-md-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">By
+                                                        email</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">By
+                                                        phone</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Post mail
+                                                        service</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Camera</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex justify-content-between align-items-center ml-auto mt-5">
-                                            <a href="./privacy-4.html"
-                                                class="btn btn-success text-uppercase ">GENERATE</a>
-                                            <a class="btn-bg-none" href="./privacy-2.html"
-                                                class=" text-uppercase">Back</a>
-                                        </div>
-
                                     </div>
-                            </form>
+
+                                    <div class="mt-3">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Save my
+                                                data for later</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ml-auto mt-5">
+                                        <a href="./privacy-4.html" class="btn btn-success text-uppercase ">GENERATE</a>
+                                        <a class="btn-bg-none" href="./privacy-2.html" class=" text-uppercase">Back</a>
+                                    </div>
+
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+
+                <div class="custom-line"></div>
+
+                <div class="row justify-content-start align-items-start mt-5">
+                    <div class="col-6 col-md-3 col-lg-3 mb-5">
+                        <div class="footer-title">PAGES</div>
+                        <div class="footer-links mt-4">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 mb-5">
+                        <div class="footer-title">COMPANY</div>
+                        <div class="footer-links mt-4">
+                            <a href="#">Advertise with us</a>
+                            <a href="#">Join the team</a>
+                            <a href="#">Buy &amp; Sell Crypto</a>
+                            <a href="#">Write for us</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 mb-5">
+                        <div class="footer-title">CATEGORIES</div>
+                        <div class="footer-links mt-4">
+                            <a href="#">Technology</a>
+                            <a href="#">Education</a>
+                            <a href="#">News</a>
+                            <a href="#">Travel</a>
+                            <a href="#">Finance</a>
+                            <a href="#">Sports</a>
+                            <a href="#">Entertainment</a>
+                            <a href="#">Lifestyle</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 mb-5">
+                        <div class="footer-title">LAGAL</div>
+                        <div class="footer-links mt-4">
+                            <a href="#">Terms and conditions</a>
+                            <a href="#">Privacy policy</a>
+                            <a href="#">Disclaimer</a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <footer>
-                <div class="container">
 
-                    <div class="custom-line"></div>
+                <h5 class="continue-reading">CONTINUE READING</h5>
 
-                    <div class="row justify-content-start align-items-start mt-5">
-                        <div class="col-6 col-md-3 col-lg-3 mb-5">
-                            <div class="footer-title">PAGES</div>
-                            <div class="footer-links mt-4">
-                                <a href="#">Home</a>
-                                <a href="#">About</a>
-                                <a href="#">Contact</a>
+                <div class="footer-posts">
+                    <div class="">
+                        <div class="other-article">
+                            <div class="article-container d-inline-flex">
+                                <div class="article-img">
+                                </div>
+                                <div class="article-description">
+                                    <div class="article-info d-inline-flex">
+                                        <div class="article-category"><span>POLITICS</span></div>
+                                        <div class="article-seperator">\</div>
+                                        <div class="article-date">20 Sep, 2023</div>
+                                    </div>
+                                    <div class="article-title">
+                                        <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam
+                                            provident.
+                                            Distinctio est </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3 col-lg-3 mb-5">
-                            <div class="footer-title">COMPANY</div>
-                            <div class="footer-links mt-4">
-                                <a href="#">Advertise with us</a>
-                                <a href="#">Join the team</a>
-                                <a href="#">Buy &amp; Sell Crypto</a>
-                                <a href="#">Write for us</a>
+                    </div>
+                    <div class="">
+                        <div class="other-article">
+                            <div class="article-container d-inline-flex">
+                                <div class="article-img">
+                                </div>
+                                <div class="article-description">
+                                    <div class="article-info d-inline-flex">
+                                        <div class="article-category"><span>POLITICS</span></div>
+                                        <div class="article-seperator">\</div>
+                                        <div class="article-date">20 Sep, 2023</div>
+                                    </div>
+                                    <div class="article-title">
+                                        <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam
+                                            provident.
+                                            Distinctio est </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3 col-lg-3 mb-5">
-                            <div class="footer-title">CATEGORIES</div>
-                            <div class="footer-links mt-4">
-                                <a href="#">Technology</a>
-                                <a href="#">Education</a>
-                                <a href="#">News</a>
-                                <a href="#">Travel</a>
-                                <a href="#">Finance</a>
-                                <a href="#">Sports</a>
-                                <a href="#">Entertainment</a>
-                                <a href="#">Lifestyle</a>
+                    </div>
+                    <div class="">
+                        <div class="other-article">
+                            <div class="article-container d-inline-flex">
+                                <div class="article-img">
+                                </div>
+                                <div class="article-description">
+                                    <div class="article-info d-inline-flex">
+                                        <div class="article-category"><span>POLITICS</span></div>
+                                        <div class="article-seperator">\</div>
+                                        <div class="article-date">20 Sep, 2023</div>
+                                    </div>
+                                    <div class="article-title">
+                                        <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam
+                                            provident.
+                                            Distinctio est </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3 col-lg-3 mb-5">
-                            <div class="footer-title">LAGAL</div>
-                            <div class="footer-links mt-4">
-                                <a href="#">Terms and conditions</a>
-                                <a href="#">Privacy policy</a>
-                                <a href="#">Disclaimer</a>
+                    </div>
+                    <div class="">
+                        <div class="other-article">
+                            <div class="article-container d-inline-flex">
+                                <div class="article-img">
+                                </div>
+                                <div class="article-description">
+                                    <div class="article-info d-inline-flex">
+                                        <div class="article-category"><span>POLITICS</span></div>
+                                        <div class="article-seperator">\</div>
+                                        <div class="article-date">20 Sep, 2023</div>
+                                    </div>
+                                    <div class="article-title">
+                                        <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam
+                                            provident.
+                                            Distinctio est </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <h5 class="continue-reading">CONTINUE READING</h5>
-
-                    <div class="footer-posts">
-                        <div class="">
-                            <div class="other-article">
-                                <div class="article-container d-inline-flex">
-                                    <div class="article-img">
-                                    </div>
-                                    <div class="article-description">
-                                        <div class="article-info d-inline-flex">
-                                            <div class="article-category"><span>POLITICS</span></div>
-                                            <div class="article-seperator">\</div>
-                                            <div class="article-date">20 Sep, 2023</div>
-                                        </div>
-                                        <div class="article-title">
-                                            <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam
-                                                provident.
-                                                Distinctio est </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="other-article">
-                                <div class="article-container d-inline-flex">
-                                    <div class="article-img">
-                                    </div>
-                                    <div class="article-description">
-                                        <div class="article-info d-inline-flex">
-                                            <div class="article-category"><span>POLITICS</span></div>
-                                            <div class="article-seperator">\</div>
-                                            <div class="article-date">20 Sep, 2023</div>
-                                        </div>
-                                        <div class="article-title">
-                                            <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam
-                                                provident.
-                                                Distinctio est </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="other-article">
-                                <div class="article-container d-inline-flex">
-                                    <div class="article-img">
-                                    </div>
-                                    <div class="article-description">
-                                        <div class="article-info d-inline-flex">
-                                            <div class="article-category"><span>POLITICS</span></div>
-                                            <div class="article-seperator">\</div>
-                                            <div class="article-date">20 Sep, 2023</div>
-                                        </div>
-                                        <div class="article-title">
-                                            <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam
-                                                provident.
-                                                Distinctio est </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="other-article">
-                                <div class="article-container d-inline-flex">
-                                    <div class="article-img">
-                                    </div>
-                                    <div class="article-description">
-                                        <div class="article-info d-inline-flex">
-                                            <div class="article-category"><span>POLITICS</span></div>
-                                            <div class="article-seperator">\</div>
-                                            <div class="article-date">20 Sep, 2023</div>
-                                        </div>
-                                        <div class="article-title">
-                                            <span>Rep udiandae aliquid sed sunt magni sunt eligendi ut aliquam
-                                                provident.
-                                                Distinctio est </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="custom-line"></div>
-                    <div class="text-center website-copyright">
-                        © Wallchart Africa. 2023. All Rights Reserved | Developed by Osai
-                        Technologies
-                    </div>
                 </div>
-            </footer>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                crossorigin="anonymous"></script>
-            <script src="assets/js/app.js"></script>
-    </body>
+                <div class="custom-line"></div>
+                <div class="text-center website-copyright">
+                    © Wallchart Africa. 2023. All Rights Reserved | Developed by Osai
+                    Technologies
+                </div>
+            </div>
+        </footer>
 
-    </html>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/app.js"></script>
+</body>
+
+</html>
