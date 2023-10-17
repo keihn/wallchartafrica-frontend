@@ -6,7 +6,6 @@
 
     slider.addEventListener('click', (e) => {
         isDown = true;
-        slider.classList.add('active');
         startX = e.pageX - slider.offsetLeft;
         scrollLeft = slider.scrollLeft;
     });
@@ -14,10 +13,10 @@
     slider.addEventListener('mousemove', (e) => {
         if (!isDown) return;
         e.preventDefault();
+        console.log(e.pageX)
         const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3; //scroll-fast
+        const walk = (x - startX) * 10; //scroll-fast
         slider.scrollLeft = scrollLeft - walk;
-        console.log(walk);
     });
 })()
 

@@ -192,6 +192,10 @@ footer {
     color: #FE0000 !important;
 }
 
+.nav-item .nav-link:hover{
+    color: #FE0000 !important;
+}
+
 .tab-to-mobile {
     display: none;
 }
@@ -2503,4 +2507,18 @@ background: #FFF;
     .download-box {
         padding: 26px 20px;
     }
+
+    .other-article .article-img {
+        width: 120%;
+        height: 80px;
+        background-image: url('../images/post/039230230939.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    .other-article{
+        width: 300px;
+    }
+    
 }
