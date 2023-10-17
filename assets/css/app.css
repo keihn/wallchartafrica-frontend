@@ -1257,6 +1257,21 @@ header .navbar-toggler-icon {
     background: #FFF !important;
 }
 
+.thumbs-down, .thumbs-up {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.thumbs-down:hover, .thumbs-up:hover{
+    color: #F60A0A;
+    cursor: pointer;
+}
+
+.thumbs-up small:hover{
+    color: #F60A0A !important;
+    cursor: pointer;
+}
+
 /* CONTACT PAGE STYLES */
 .contact-heading {
     color: #F60A0A;
@@ -2395,6 +2410,11 @@ background: #FFF;
 
 
 @media (max-width: 576px) {
+    
+    .post-nav-wrapper .sm-post-component {
+        display: none;
+    }
+
     .io-hero {
         height: 80vh;
         width: 100%;
