@@ -2575,8 +2575,18 @@ header .navbar-toggler-icon {
 @media (max-width: 576px) {
 
     #homecarousel .carousel-trend .carousel-trend-ticker{
-        height: 16px;
+        height: 12px;
+        padding: 20px 0px;
     }
+
+    /* .carousel-item .hero-carousel-img{
+        width: 100%;
+        height: 500px;
+        background-image: linear-gradient(180deg, rgba(27, 25, 25, 0.25) 0%, #1B1919 100%), url('../images/post/bg1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    } */
 
     .post-nav-wrapper .sm-post-component {
         display: none;
