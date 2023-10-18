@@ -355,14 +355,14 @@ header .navbar-toggler-icon {
     word-wrap: break-word;
     color: white;
     width: initial;
-    /* font-size: 16px; */
+    font-size: 20px;
     font-family: Oswald;
     font-weight: 500;
 }
 
 #homecarousel .carousel-trend .carousel-trend-ticker {
     width: 100%;
-    height: 24px;
+    height: 30px;
     padding-left: 5px;
     padding-right: 10px;
     background: #1C1C1C;
@@ -394,7 +394,7 @@ header .navbar-toggler-icon {
 
 #homecarousel .carousel-trend .carousel-trend-ticker-items a {
     color: white;
-    font-size: 8px;
+    font-size: 12px;
     font-family: Oswald;
     font-weight: 500;
     word-wrap: break-word;
@@ -541,6 +541,15 @@ header .navbar-toggler-icon {
 #categorycarousel1 .carousel-inner,
 #categorycarousel1 .carousel-item {
     height: 100%;
+}
+
+.carousel-item .hero-carousel-img{
+    width: 100%;
+    height: 430px;;
+    background-image: linear-gradient(180deg, rgba(27, 25, 25, 0.25) 0%, #1B1919 100%), url('../images/post/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .carousel-img-container {
@@ -2564,6 +2573,10 @@ header .navbar-toggler-icon {
 
 
 @media (max-width: 576px) {
+
+    #homecarousel .carousel-trend .carousel-trend-ticker{
+        height: 16px;
+    }
 
     .post-nav-wrapper .sm-post-component {
         display: none;
