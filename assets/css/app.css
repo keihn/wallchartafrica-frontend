@@ -732,11 +732,11 @@ header .navbar-toggler-icon {
 }
 
 .each-post-category {
-    color: #223D0D;
-    font-size: 12px;
+    color: #279761;
+    font-size: 10px;
     font-family: Oswald;
     font-weight: 500;
-    word-wrap: break-word;
+    word-wrap: break-word
 }
 
 .each-post-seperator {
@@ -838,9 +838,9 @@ header .navbar-toggler-icon {
 
 .other-article .article-category {
     color: #279761;
-    font-size: 12px;
+    font-size: 10px;
     font-family: Oswald;
-    font-weight: 700;
+    font-weight: 500;
     word-wrap: break-word
 }
 
@@ -853,8 +853,8 @@ header .navbar-toggler-icon {
     padding: 0px 10px;
 }
 
-.other-article .article-date {
-    color: #262626;
+.other-article .article-date { 
+    color: #868484;
     font-size: 12px;
     font-family: Inter;
     font-weight: 400;
@@ -1976,9 +1976,9 @@ header .navbar-toggler-icon {
 
 .footer-article .article-category {
     color: #279761;
-    font-size: 12px;
+    font-size: 10px;
     font-family: Oswald;
-    font-weight: 700;
+    font-weight: 500;
     word-wrap: break-word
 }
 
@@ -2596,6 +2596,9 @@ header .navbar-toggler-icon {
         padding: 20px 0px;
     }
 
+    .carousel-caption{
+        text-align: left;
+    }
     /* .carousel-item .hero-carousel-img{
         width: 100%;
         height: 500px;
