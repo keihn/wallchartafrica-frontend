@@ -307,7 +307,7 @@ header .navbar-toggler-icon {
     width: 75%;
 }
 
-.carousel .carousel-caption h3 {
+.carousel .carousel-caption a {
     color: white;
     font-size: 28px;
     font-family: Oswald;
@@ -653,7 +653,14 @@ header .navbar-toggler-icon {
     float: left;
 }
 
-#featuredcarousel1 .carousel-caption h3 {
+
+.carousel-caption .caption-title {
+    margin-top: 17px;
+    float: left;
+    text-align:left;
+}
+
+#featuredcarousel1 .carousel-caption a {
     font-size: 24px;
     font-weight: 500;
 }
@@ -2196,7 +2203,7 @@ header .navbar-toggler-icon {
         width: 80%;
     }
 
-    #categorycarousel1 .carousel-caption h3 {
+    #categorycarousel1 .carousel-caption a {
         font-size: 28px;
     }
 
@@ -2266,7 +2273,7 @@ header .navbar-toggler-icon {
         width: 85%;
     }
 
-    .carousel .carousel-caption h3 {
+    .carousel .carousel-caption a {
         font-size: 28px;
     }
 
@@ -2352,7 +2359,7 @@ header .navbar-toggler-icon {
         /* bottom:25px; */
     }
 
-    .carousel .carousel-caption h3 {
+    .carousel .carousel-caption a {
         font-size: 28px;
         font-weight: 500;
         line-height: 28px;
@@ -2375,7 +2382,7 @@ header .navbar-toggler-icon {
         left: 25px;
     }
 
-    .carousel .carousel-caption h3 {
+    .carousel .carousel-caption a {
         font-size: 28px;
         font-weight: 500;
     }
@@ -2417,7 +2424,7 @@ header .navbar-toggler-icon {
         left: 15px;
     }
 
-    .carousel .carousel-caption h3 {
+    .carousel .carousel-caption a {
         font-size: 18px;
         font-weight: 400;
         line-height: 28px;
