@@ -1257,7 +1257,7 @@ header .navbar-toggler-icon {
   font-family: Oswald;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
   text-decoration: none;
   transition: ease-in 0.2s;
@@ -1291,6 +1291,9 @@ header .navbar-toggler-icon {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .comment-component .comment-content .comment-name {
@@ -2108,6 +2111,13 @@ header .navbar-toggler-icon {
 
 #optimizesection h1 {
   font-family: Inter;
+}
+
+.bi-heart-fill{
+  color: #1C1C1C;
+}
+.bi-heart-fill:hover{
+  color: #F60A0A;
 }
 
 
